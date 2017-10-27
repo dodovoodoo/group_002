@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="dodovoodoo">
+  <title>晋级教育</title>
+  <link rel="stylesheet" href="modules/css/common.scss">
+  <link rel="stylesheet" href="modules/css/index.scss">
+  <link rel="stylesheet" href="modules/lib/hover-min.css">
+  <link rel="stylesheet" href="components/animate.css/animate.css">
+</head>
+<body>
+<link rel="import" href="modules/widget/topBar/topBar.html?__inline">
+<div class="g-page">
+  <!--头部banner-->
+  <div class="g-banner">
+    <div class="g-banner__up swiper-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide">
+          <img src="./img/banner1.jpg" alt="">
+        </a>
+        <a class="swiper-slide">
+          <img src="./img/banner2.jpg" alt="">
+        </a>
+        <a class="swiper-slide">
+          <img src="./img/banner3.jpg" alt="">
+        </a>
+        <a class="swiper-slide">
+          <img src="./img/banner4.jpg" alt="">
+        </a>
+      </div>
+
+    </div>
+    <div class="g-banner__blew swiper-container">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide hvr-bounce-in">
+          <img src="./img/banner1.jpg" alt="">
+          <p>全国合作校区10000多家</p>
+        </a>
+        <a class="swiper-slide hvr-bounce-in">
+          <img src="./img/banner2.jpg" alt="">
+          <p>晋级托管比家还温暖</p>
+        </a>
+        <a class="swiper-slide hvr-bounce-in">
+          <img src="./img/banner3.jpg" alt="">
+          <p>每一所小学旁边都有一所晋级托管</p>
+        </a>
+        <a class="swiper-slide hvr-bounce-in">
+          <img src="./img/banner4.jpg" alt="">
+          <p>放学后才是关键</p>
+        </a>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!--搜索功能框-->
+  <div class="g-palette">
+    <div class="g-palette__wrap">
+      <div class="g-palette__searchBox">
+        <input id="searchBox-input" name="" class="" placeholder="输入搜索关键词"/>
+        <input type="button" id="searchBox-btn" value=""/>
+      </div>
+      <ul class="g-palette__nav">
+        <li><a href="#g-products">产品介绍</a></li>
+        <li><a href="#g-supports">加盟支持</a></li>
+        <li><a href="#g-news">新闻动态</a></li>
+        <li><a href="#g-team">团队展示</a></li>
+        <li><a href="#g-campus">校区展示</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--产品介绍-->
+  <div class="g-products" id="g-products">
+    <div class="g-item">
+      <div class="g-item__title">
+        <h1>— 产品介绍 —</h1>
+      </div>
+      <ul class="g-item__content">
+        <li class="g-item__deposit ">
+          <i class="g-product__icon">托</i>
+          <h2>晋级托管</h2>
+          <p>
+            进入二十一世纪的中国教育培训业，诞生一个新兴的行业产品——品牌学生托管。众多学生托管机构中，北京晋级爱之家国际文化传播有限公司旗下的“晋级托管”，横空出世，一马当先，历时十二年，成为中国学生托管的开创品牌！晋级托管针对“中国的城镇学......</p>
+          <a href="" class="g-product__link">more&nbsp;&nbsp;&gt;&gt;</a>
+        </li>
+        <li class="g-item__habit">
+          <i class="g-product__icon">习</i>
+          <h2>晋级好习惯特训营</h2>
+          <p>
+            “播种一种行为，收获一种习惯；播种一种习惯，收获一种性格；播种一种性格，收获一种命运。”基于这种理论，全国晋级教育连锁机构历经三年研发出了非智力因素培养之好习惯特训营体系，旨在在一个人最容易养成习惯的年龄段，通过一系列的训练，改掉......</p>
+          <a href="" class="g-product__link">more&nbsp;&nbsp;&gt;&gt;</a>
+        </li>
+        <li class="g-item__study">
+          <i class="g-product__icon">乐</i>
+          <h2>晋级快乐学习法</h2>
+          <p>
+            晋级快乐学习法包含六个子项目：野外大课堂、专家报告会、夏冬令营假日行、亲子运动会、快乐大课间、课堂小游戏。推行“学中玩、玩中学”的教学模式，让孩子对课外报班充满兴趣，每每盼到节假日背着书包上学去！家长对培训机构很满意，认为孩子在这......</p>
+          <a href="" class="g-product__link">more&nbsp;&nbsp;&gt;&gt;</a>
+        </li>
+        <li class="g-item__business">
+          <i class="g-product__icon">商</i>
+          <div class="g-business_content">
+            <h2>晋级商学院</h2>
+            <p>
+              从2004年办起第一所培训托管学校起，晋级经过近十三年的发展建设，完善了两个巨大工程——硬件建设工程和软件建设工程。软件工程主要体现在人才培养方面，总结出了一系列的成功经验，通过内训会的方式传道授业解惑。目前已经成功举办多期《晋级校长高级研修班》、《晋级托管精英教师特训营》、《晋级快乐学习实操班》、《晋级团队建设实操班》、《晋级人资源管理实操班》、《晋级全员化招生校长实操班》......</p>
+            <a href="" class="g-product__link">more&nbsp;&nbsp;&gt;&gt;</a>
+          </div>
+        </li>
+        <li class="g-item__cheats">
+          <i class="g-product__icon">籍</i>
+          <div class="g-business_content">
+            <h2>晋级秘籍</h2>
+            <p>
+              晋级有一支召之即来、来之能战、战之必胜的团队，不仅如此，这支团队还善于总结。把办学过程中的成功经验和感悟总汇集了一套书籍，此书籍分为管理类、师训类、市场类、宣传类、运营类、非智力因素开发课程类。加盟晋级以后，如何以最小的成本、最快的速度，让晋级托管在一座城市遍地开花，从而实现效益的最大化。这是每个晋级加盟校最关心的问题。参考晋级运营秘笈，减少摸索的时间，借用晋级成功的办学......</p>
+            <a href="" class="g-product__link">more&nbsp;&nbsp;&gt;&gt;</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--加盟支持-->
+  <div class="g-supports" id="g-supports">
+    <div class="g-item">
+      <div class="g-item__title">
+        <h1>— 加盟扶持 —</h1>
+      </div>
+      <div class="g-item__content">
+        <div class="g-item__upside">
+          <div class="g-item__upsideWrap">
+            <div class="g-upside__section">
+              <h2>校区筹建</h2>
+              <h3>Campus preparation</h3>
+              <p>授权合作店使用“晋级托管”商标，并对其进行品牌授权区域保护；提供全套VI设计，应用于各种品牌宣传等；为加盟校制作一期关于品牌入驻权威的开业报，方便招生宣传，扩大品牌的影响力。</p>
+              <a href="">more&nbsp;&nbsp;&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="g-item__underpart">
+          <img src="./img/support-inset-01.png" class="g-underpart__inset__01"/>
+          <div class="g-underpart__section__01">
+            <h2>品牌托管运营秘笈</h2>
+            <h3>The operation of the brand hosting tips</h3>
+            <p>品牌托管老师必备的招生、接待、带班等经验的师训手册，人力、教师团队等管理层手册，及开业六部曲、媒体宣传报道、招生爆满等市场手册，晋级托管、非智力开发等特色</p>
+          </div>
+          <div class="g-underpart__section__02">
+            <p>手册，思想、招生、管理等图书、音频和视频光盘。</p>
+            <a href="">more&nbsp;&nbsp;&gt;&gt;</a>
+          </div>
+          <img src="./img/support-inset-02.png" class="g-underpart__inset__02"/>
+          <img src="./img/support-inset-03.png" class="g-underpart__inset__03"/>
+          <div class="g-underpart__section__03">
+            <h2>师资团队培训</h2>
+            <h3>Teacher team training</h3>
+            <p>带班、续班等托管教师必备的知识，并穿插进行相关实践活动。</p>
+            <a href="">more&nbsp;&nbsp;&gt;&gt;</a>
+          </div>
+          <div class="g-underpart__section__04">
+            <h2>校长管理培训<span>Principal management training</span></h2>
+            <p>关于如何招聘和培训新员工的技能，如何设计员工薪酬体系方案，托管带班的流程...</p>
+            <a href="">more&nbsp;&nbsp;&gt;&gt;</a>
+          </div>
+          <a class="g-underpart__link" href="">查看详情</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--新闻动态-->
+  <div class="g-news" id="g-news">
+    <div class="g-item">
+      <div class="g-item__title">
+        <h1>— 新闻动态 —</h1>
+      </div>
+      <div class="g-item__content">
+        <ul class="g-item__tab">
+          <li class="current" id="company">公司新闻</li>
+          <li id="news">加盟公告</li>
+        </ul>
+        <!--公司新闻-->
+        <div class="g-item__panel " id="company_panel">
+          <div class="g-panel__slide">
+            <div class="pc-slide">
+              <div class="view">
+                <div class="swiper-container">
+                  <a class="arrow-left" href="#"></a>
+                  <a class="arrow-right" href="#"></a>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/b1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview">
+                <a class="arrow-left" href="#"></a>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide active-nav">
+                      <img src="./img/b1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="./img/b6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <a class="arrow-right" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="g-panel__list">
+            <ul>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="g-item__panel hide" id="news_panel">
+          <div class="g-panel__slide">
+            <div class="pc-slide">
+              <div class="view">
+                <div class="swiper-container">
+                  <a class="arrow-left" href="#"></a>
+                  <a class="arrow-right" href="#"></a>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/b3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview">
+                <a class="arrow-left" href="#"></a>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/b3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/b5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="./img/b6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <a class="arrow-right" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="g-panel__list">
+            <ul>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h2>【凤凰江西网】学生托管班招生难，“全员化招生”的定时达大大所大所大多飒飒大所大叔大婶大多</h2>
+                  <h3> 对于校外开学生托管班的来说，最为重要的是什么？相信大家定当异大时代撒所的哈登和撒娇大时代三</h3>
+                  <h4>2017-10-18</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--团队展示-->
+  <div class="g-team" id="g-team">
+    <div class="g-item">
+      <div class="g-item__title">
+        <h1>— 团队展示 —</h1>
+      </div>
+      <div class="g-item__content">
+        <div class="g-item__group">
+          <div class="g-group__A g-group__item">
+            <div class="g-group__title">
+              <h1>魏丽</h1>
+              <h2>副总裁</h2>
+            </div>
+            <div class="g-group__content hvr-sweep-to-top">
+              <div class="g-group__bd animated slideInUp">
+                <p>
+                  十一年晋龄<br/>
+                  全国晋级教育连锁机构副总裁<br/>
+                  晋级教育专家讲师团高级讲师<br/>
+                  晋级人力资源管理实操班班主任
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="g-group__B g-group__item">
+            <div class="g-group__title">
+              <h1>刘珣</h1>
+              <h2>副总裁</h2>
+            </div>
+            <div class="g-group__content hvr-sweep-to-top">
+              <div class="g-group__bd animated slideInUp">
+                <p>十一年晋龄<br/>
+                  全国晋级教育连锁机构副总裁<br/>
+                  晋级教育专家讲师团高级讲师<br/>
+                  晋级人力资源管理实操班班主任</p>
+              </div>
+            </div>
+          </div>
+          <div class="g-group__F g-group__item">
+            <div class="g-group__title">
+              <h1>窦昆</h1>
+              <h2>创始人</h2>
+            </div>
+            <div class="g-group__content hvr-sweep-to-top">
+              <div class="g-group__bd animated slideInUp">
+                <p>
+                  中国学生托管之父<br/>
+                  中国托管教育联盟主席<br/>
+                  新华网2014年度中国影响力教育人物<br/>
+                  央广网2016年度中国教育行业领军人物<br/>
+                  CCTV对话中国品牌特邀访谈嘉宾<br/>
+                  《楚天都市报》原资深编辑记者<br/>
+                  电影《放学后》总投资人<br/>
+                  晋级教育创始人
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="g-group__C g-group__item">
+            <div class="g-group__title">
+              <h1>张建华</h1>
+              <h2>副总裁</h2>
+            </div>
+            <div class="g-group__content hvr-sweep-to-top">
+              <div class="g-group__bd animated slideInUp">
+                <p>
+                  八年晋龄<br/>
+                  晋级教育专家讲师团高级讲师<br/>
+                  晋级教育校长高级研修班班主任<br/>
+                  全国晋级教育连锁机构副总
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="g-group__D g-group__item">
+            <div class="g-group__title">
+              <h1>殷辉</h1>
+              <h2>副总裁</h2>
+            </div>
+            <div class="g-group__content hvr-sweep-to-top">
+              <div class="g-group__bd  animated slideInUp">
+                <p>
+                  八年晋龄<br/>
+                  全国晋级教育连锁机构副总裁<br/>
+                  晋级教育专家讲师团特级讲师<br/>
+                  晋级托管精英教师特训营班主任
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--校区展示-->
+  <div class="g-campus" id="g-campus">
+    <div class="g-item">
+      <div class="g-item__title">
+        <h1>— 校区展示 —</h1>
+      </div>
+      <div class="g-item__content">
+        <ul class="g-item__tab">
+          <li class="current" id="east">东部沿海</li>
+          <li id="middle">中部内陆</li>
+          <li id="south">西部边远</li>
+        </ul>
+        <div class="g-item__panel">
+          <div class="swiper-container" id="east_panel">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide">
+                <img src="./img/b3.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b4.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b5.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b6.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b1.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b2.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-container hide" id="middle_panel">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide">
+                <img src="./img/b3.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b4.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b5.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b6.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b1.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b2.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-container hide" id="south_panel">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide">
+                <img src="./img/b3.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b4.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b5.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b6.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide">
+                <img src="./img/b1.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+              <a class="swiper-slide ">
+                <img src="./img/b2.jpg" alt="">
+                <p>河北廊坊晋级教育</p>
+              </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
+
+<script src="lib/mod.js"></script>
+<script>
+  require.async('modules/app/index.js');
+</script>
+</body>
+</html>

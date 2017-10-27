@@ -1,0 +1,59 @@
+<link rel="import" href="../popup/popup.html?__inline">
+
+<script>
+	require('bottomBar.js');
+</script>
+
+<div class="w-bottomBar">
+  <div class="w-bottomBar__leaveMessage">
+    <form class="w-bottomBar-form" method="post">
+      <ul>
+        <li class="w-leaveMessage__title">
+          <h1>— 联系我们 —</h1>
+        </li>
+        <li class="w-leaveMessage__inputBox">
+          <div class="w-leaveMessage__item">
+            <span>用户：</span><input name="username" id="username" class="" type="text" placeholder="请输入您的姓名"/>
+          </div>
+          <div class="w-leaveMessage__item">
+            <span>手机：</span><input name="phone" id="phone" class="" placeholder="请输入您的电话" type="tel"/>
+          </div>
+        </li>
+        <li class="w-leaveMessage__textareaBox">
+          <span>留言：</span>
+          <textarea name="msg" id="msg" class="">请输入您相对我们说的话</textarea>
+        </li>
+        <li>
+          <input type="submit" value="提交" class="w-leaveMessage__submit"/>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="w-bottomBar__footer">
+    <div class="w-bottomBar__slogan">
+      <h1>晋级教育邀你一起晋级，中国学生托管开创品牌--晋级托管！</h1>
+    </div>
+    <div class="w-bottomBar__info">
+      <ul class="w-bottomBar__QRCode">
+        <li>
+          <img src="./img/bottom_qr1.png"/>
+          <p>官方微博</p>
+        </li>
+        <li>
+          <img src="./img/bottom_qr2.png"/>
+          <p>官方微信</p>
+        </li>
+        <li>
+          <img src="./img/bottom_qr3.png"/>
+          <p>官方微信</p>
+        </li>
+      </ul>
+      <ul class="w-bottomBar__contact">
+        <li>电话 :4000 400 826</li>
+        <li>邮箱 :jjxx2008@163.com</li>
+        <li>地址 :北京市海淀区蓝靛厂路汇博大厦B座4楼（人大附小正对面)</li>
+      </ul>
+    </div>
+    <p class="w-bottomBar__copyright">Copyright © 2012-2017 晋级教育 版权所有 备案号：京ICP备15037137号</p>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="dodovoodoo">
+  <title>晋级教育</title>
+  <link rel="stylesheet" href="modules/css/common.scss">
+  <link rel="stylesheet" href="modules/css/404.scss">
+</head>
+<body>
+  <div class="g-page">
+    <i></i>
+    <h1>您的页面<span>走失了</span></h1>
+    <h2><span id="count">5</span>秒后返回</h2>
+    <a href="index.html">点击返回首页&nbsp;&gt;&nbsp;&gt;</a>
+  </div>
+<script>
+  var count=5;
+  setInterval(function(){
+    count--;
+    document.getElementById("count").innerText=count;
+    if(count==0){
+      clearInterval();
+      history.go(-1);
+    }
+  },1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@import "base/mixins";
+
+.g-page{
+  width:100%;
+  background: url("./img/joinus_16.png") no-repeat bottom center;
+}
+.g-banner{
+  width:100%;
+  height:500px;
+  background: url("./img/joinus_02.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.g-wrap{
+  @include clearfix;
+  width:1200px;
+  height:auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  .g-wrap__nav{
+    float:left;
+    width:200px;
+    h1{
+      background: url("./img/joinus_05.png") no-repeat;
+      height:50px;
+      padding-left:65px;
+      padding-top:20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+    li{
+      width:200px;
+      padding:22px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom:1px solid #cccccc;
+      letter-spacing: 3px;
+      &:first-child{
+        background: url("./img/joinus_07.png") no-repeat;
+      }
+      &.current a{
+        color:#6bd9f2;
+      }
+    }
+  }
+  .g-wrap__bd{
+    float:left;
+    width:1000px;
+    padding-top:15px;
+    padding-left:45px;
+    .g-item__title{
+      width:100%;
+      height:36px;
+      line-height: 36px;
+      border-bottom:1px solid #ccc;
+      padding-left:35px;
+      padding-right:20px;
+      h2{
+        float:left;
+        width:50%;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 600;
+      }
+      .g-item__direction{
+        float:right;
+        width:230px;
+        height:100%;
+        color:#cccccc;
+        padding-left:35px;
+        background: url("./img/joinus_08.png") no-repeat center left;
+        a{
+          font-size: 14px;
+          color:#cccccc;
+          &:hover{
+            color:#6bd9f2;
+          }
+        }
+      }
+    }
+    .g-item__section{
+      width:100%;
+      padding-top:50px;
+      p{
+        text-indent: 2em;
+        letter-spacing: 5px;
+        text-align: justify;
+        line-height: 40px;
+      }
+    }
+  }
+}
+.w-bottomBar{
+  margin-top: 0px!important;
+}
