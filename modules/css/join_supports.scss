@@ -1,0 +1,257 @@
+@import "base/mixins";
+html,body{
+  background: #fff;
+}
+.g-page{
+  width:100%;
+  background: url("./img/joinus_16.png") no-repeat bottom center;
+}
+.g-banner{
+  width:100%;
+  height:500px;
+  background: url("./img/joinus_02.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.g-wrap{
+  @include clearfix;
+  width:1200px;
+  height:auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  .g-wrap__nav{
+    float:left;
+    width:200px;
+    h1{
+      background: url("./img/joinus_05.png") no-repeat;
+      height:50px;
+      padding-left:65px;
+      padding-top:20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+    li{
+      width:200px;
+      padding:22px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom:1px solid #cccccc;
+      letter-spacing: 3px;
+      &:first-child{
+        background: url("./img/joinus_07.png") no-repeat;
+      }
+      &.current a{
+        color:#6bd9f2;
+      }
+    }
+  }
+  .g-wrap__bd{
+    float:left;
+    width:1000px;
+    padding-top:15px;
+    padding-left:45px;
+    .g-item__title{
+      width:100%;
+      height:36px;
+      line-height: 36px;
+      border-bottom:1px solid #ccc;
+      padding-left:35px;
+      padding-right:20px;
+      h2{
+        float:left;
+        width:50%;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 600;
+      }
+      .g-item__direction{
+        float:right;
+        width:230px;
+        height:100%;
+        color:#cccccc;
+        padding-left:35px;
+        background: url("./img/joinus_08.png") no-repeat center left;
+        a{
+          font-size: 14px;
+          color:#cccccc;
+          &:hover{
+            color:#6bd9f2;
+          }
+        }
+      }
+    }
+    .g-item__section{
+      @include clearfix;
+      padding-top: 50px;
+      width:950px;
+      li{
+        position: relative;
+        float: left;
+        margin:0px 0px 10px 10px;
+        height:240px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        overflow: hidden;
+        cursor: pointer;
+        overflow: hidden;
+        &.hvr-radial-out:before{
+          background: url("./img/support-item-hover-bg.png")!important;
+          transition-duration: 1s;
+        }
+        h2{
+          position: absolute;
+          background-image: url("./img/support-item-title-bg.png");
+          color:#fff;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          padding:10px;
+        }
+        p{
+          position: absolute;
+          top:100%;
+          left:0px;
+          padding:15px;
+          color:#fff;
+          font-size: 16px;
+          text-align: center;
+        }
+        &:hover h2{
+           transform: translate3d(0,-50px,0);
+           transition: transform 2s;
+         }
+        &:hover p{
+          transform: translate3d(0,-140px,0);
+          transition: transform 2s;
+        }
+        &.g-section__a{
+          width:515px;
+          background-image: url("./img/supports-item-bg(1).jpg");
+          h2{
+            top: 100px;
+            left: 200px;
+          }
+        }
+        &.g-section__b{
+          width:365px;
+          background-image: url("./img/supports-item-bg(2).jpg");
+          h2{
+            top: 100px;
+            left: 120px;
+          }
+        }
+        &.g-section__c{
+          width:320px;
+          background-image: url("./img/supports-item-bg(3).jpg");
+          h2{
+            top: 100px;
+            left: 100px;
+          }
+        }
+        &.g-section__d{
+          width:320px;
+          background-image: url("./img/supports-item-bg(4).jpg");
+          h2{
+            top: 100px;
+            left: 90px;
+          }
+          &:hover p{
+            transform: translate3d(0,-120px,0);
+            transition: transform 2s;
+          }
+        }
+        &.g-section__e{
+          width:230px;
+          height:490px;
+          margin-top: -250px;
+          background-image: url("./img/supports-item-bg(5).jpg");
+          h2{
+            top: 200px;
+            left: 50px;
+          }
+          &:hover h2{
+            transform: translate3d(0,-100px,0);
+            transition: transform 2s;
+          }
+          &:hover p{
+            transform: translate3d(0,-300px,0);
+            transition: transform 2s;
+          }
+        }
+        &.g-section__f{
+          width:650px;
+          background-image: url("./img/supports-item-bg(6).jpg");
+          h2{
+            top: 100px;
+            left: 260px;
+          }
+        }
+        &.g-section__h{
+          width:510px;
+          background-image: url("./img/supports-item-bg(8).jpg");
+          h2{
+            top: 100px;
+            left: 150px;
+          }
+        }
+
+        &.g-section__g{
+          width:370px;
+          background-image: url("./img/supports-item-bg(7).jpg");
+          h2{
+            top: 100px;
+            left: 90px;
+          }
+        }
+        &.g-section__i{
+          width:230px;
+          height:490px;
+          background-image: url("./img/supports-item-bg(11).jpg");
+          h2{
+            top: 200px;
+            left: 50px;
+          }
+          &:hover h2{
+            transform: translate3d(0,-100px,0);
+            transition: transform 2s;
+          }
+          &:hover p{
+            transform: translate3d(0,-300px,0);
+            transition: transform 2s;
+          }
+        }
+        &.g-section__j{
+          width:320px;
+          background-image: url("./img/supports-item-bg(9).jpg");
+          h2{
+            top: 100px;
+            left: 100px;
+          }
+        }
+        &.g-section__k{
+          width:320px;
+          background-image: url("./img/supports-item-bg(10).jpg");
+          h2{
+            top: 100px;
+            left: 100px;
+          }
+        }
+        &.g-section__l{
+          width:400px;
+          background-image: url("./img/supports-item-bg(12).jpg");
+          h2{
+            top: 100px;
+            left: 130px;
+          }
+        }
+        &.g-section__m{
+          width:240px;
+          background-image: url("./img/supports-item-bg(13).jpg");
+        }
+      }
+    }
+  }
+}
+
