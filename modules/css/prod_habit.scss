@@ -1,0 +1,196 @@
+@import "base/mixins";
+html,body{
+  background: #fff;
+}
+.g-page{
+  width:100%;
+  background: url("./img/joinus_16.png") no-repeat bottom center;
+}
+.g-banner{
+  width:100%;
+  height:500px;
+  background: url("./img/prod-banner-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.g-wrap{
+  @include clearfix;
+  width:1200px;
+  height:auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  .g-wrap__nav{
+    float:left;
+    width:200px;
+    h1{
+      background: url("./img/joinus_05.png") no-repeat;
+      height:50px;
+      padding-left:65px;
+      padding-top:20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+    li{
+      width:200px;
+      padding:22px 0px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom:1px solid #cccccc;
+      letter-spacing: 3px;
+      &:first-child{
+        background: url("./img/joinus_07.png") no-repeat;
+      }
+      &.current a{
+        color:#6bd9f2;
+      }
+    }
+  }
+  .g-wrap__bd{
+    float:left;
+    width:1000px;
+    padding-top:15px;
+    padding-left:45px;
+    .g-item__title{
+      width:100%;
+      height:36px;
+      line-height: 36px;
+      border-bottom:1px solid #ccc;
+      padding-left:35px;
+      padding-right:20px;
+      h2{
+        float:left;
+        width:50%;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 600;
+      }
+      .g-item__direction{
+        float:right;
+        height:100%;
+        color:#cccccc;
+        padding-left:35px;
+        background: url("./img/joinus_08.png") no-repeat center left;
+        a{
+          font-size: 14px;
+          color:#cccccc;
+          &:hover{
+            color:#6bd9f2;
+          }
+        }
+      }
+    }
+    .g-item__section{
+      @include clearfix;
+      padding-top: 50px;
+      width:950px;
+      .g-section__content{
+        line-height: 35px;
+        text-align: justify;
+      }
+      .g-section__group{
+        width:100%;
+        position: relative;
+        padding-top:50px;
+        h2{
+          width:100%;
+          padding-left: 35px;
+          padding-bottom: 5px;
+          margin-bottom: 50px;
+          font-size: 20px;
+          letter-spacing: 5px;
+          border-bottom: 1px solid #ccc;
+          font-weight: 600;
+        }
+        .g-group__list{
+          @include clearfix;
+          li{
+            float:left;
+            width:464px;
+            height:200px;
+            background:url("./img/prod-book-bg.jpg") no-repeat center center;
+            margin-bottom: 20px;
+            &:nth-child(even){
+              margin-left: 20px;
+            }
+            .g-group__pic{
+              float: left;
+              width:194px;
+              height:100%;
+              padding:19px 25px ;
+              img{
+                width:144px;
+                height:162px;
+              }
+            }
+            &:hover .g-group__pic{
+              padding:19px 15px 19px 35px;
+              transition : padding 1s;
+            }
+            .g-group__explain{
+              float: left;
+              width:270px;
+              height:100%;
+              section{
+                width: 100%;
+                color:#fff;
+                h3{
+                  font-size: 18px;
+                  text-align: center;
+                  padding:20px 0px;
+                }
+                p{
+                  padding:0px 25px;
+                  font-size: 14px;
+                  text-align: justify;
+                  line-height: 25px;
+                  letter-spacing: 2px;
+                }
+              }
+            }
+            &:hover .g-group__explain{
+              section{
+                padding-left:15px;
+                transition : padding-left 1s;
+              }
+            }
+          }
+        }
+        .g-group__pager{
+          @include clearfix;
+          width:40%;
+          padding-bottom:50px;
+          margin:0 auto;
+          position: relative;
+          li{
+            float: left;
+            padding:2px 5px;
+            font-size: 12px;
+            border: 1px solid #6bd9f2;
+            margin-left: 10px;
+            a{
+              width:100%;
+              height:100%;
+            }
+            &:hover{
+              background: #6bd9f2;
+            }
+            &:hover a{
+              color:#fff;
+            }
+            &.current{
+              background: #6bd9f2;
+              & a{
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.w-bottomBar{
+  margin-top: 0px;
+}
+

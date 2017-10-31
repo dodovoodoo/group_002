@@ -1,7 +1,7 @@
 // 设置项目属性
 fis.set('project.name', ''); // 项目名称
-fis.set('project.web', ''); // 静态资源部署路径
-fis.set('project.static', '/static'); // 静态资源部署路径
+fis.set('project.web', '/output/static'); // 静态资源部署路径
+fis.set('project.static', '/output/static'); // 静态资源部署路径
 fis.set('project.files', ['*.html', 'map.json', '/mock/**']); // 指定需要编译的文件和改文件的引入支援
 fis.config.set('project.watch.usePolling',true);
 
