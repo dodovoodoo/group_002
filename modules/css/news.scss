@@ -121,6 +121,71 @@ html,body{
       @include clearfix;
       padding-top: 50px;
       width:950px;
+      .g-post__wrap{
+        width:100%;
+        height:100%;
+        .g-post__title{
+          font-size: 20px;
+          color:#333;
+        }
+        .g-post__prop{
+          @include clearfix;
+          font-size: 12px;
+          color:#c6c6c6;
+          padding: 30px 0px;
+          .g-post__time{
+            @include clearfix;
+            float:left;
+            width:50%;
+            .g-post__view{
+              float: right;
+              display: block;
+              width:50%;
+              background: url("./img/icon-see.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: left center;
+              padding-left: 20px;
+            }
+          }
+          .g-post__share{
+            float:right;
+            width:15%;
+          }
+
+        }
+        .g-post__body{
+          p{
+            line-height: 25px;
+            text-indent: 2em;
+            text-align: justify;
+          }
+          img{
+            margin: 0 auto;
+          }
+        }
+        .g-post__page{
+          @include clearfix;
+          width:130px;
+          height:20px;
+          margin: 60px auto;
+          li{
+            border:1px solid #6bd9f2;
+            float:left;
+            padding:2px 8px;
+            font-size: 12px;
+            &.g-post__prev{
+              margin-right: 20px;
+            }
+            &:hover{
+              background: #6bd9f2;
+              a{
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
       .g-item__list{
         width:100%;
         li{
@@ -130,6 +195,10 @@ html,body{
           background: #fff;
           border: 1px solid #c6c6c6;
           margin-bottom: 30px;
+          .news_item_link{
+            width:100%;
+            height:100%;
+          }
           &:hover{
             cursor: pointer;
             box-shadow: 0px 3px #e0eff2;
@@ -143,7 +212,7 @@ html,body{
                   color:#6bd9f2;
                 }
               }
-              a{
+              .news_detail_link{
                 color:#fff;
                 background: #6bd9f2;
               }
@@ -186,7 +255,7 @@ html,body{
                 color:#c6c6c6;
               }
             }
-            a{
+            a.news_detail_link{
               float: left;
               display: block;
               width:96px;
@@ -240,4 +309,32 @@ html,body{
 .color-third{
   background:#6bd9f2 ;
   color:#fff;
+}
+.icon-qq,.icon-weibo,.icon-weixin{
+  float:left;
+  display: block;
+  width:24px;
+  height:24px;
+  margin-right: 10px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.icon-qq{
+  background-image:url("./img/icon-normal-qq.png");
+  &:hover{
+    background-image: url("./img/icon-qq.png");
+  }
+}
+.icon-weixin{
+  background-image:url("./img/icon-normal-weixin.png");
+  &:hover{
+    background-image: url("./img/icon-weixin.png");
+  }
+}
+.icon-weibo{
+  background-image:url("./img/icon-normal-weibo.png");
+  &:hover{
+    background-image: url("./img/icon-weibo.png");
+  }
 }
