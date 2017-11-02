@@ -1,0 +1,243 @@
+@import "base/mixins";
+html,body{
+  background: #fff;
+}
+.g-page{
+  width:100%;
+  background: url("./img/joinus_16.png") no-repeat bottom center;
+}
+.g-banner{
+  width:100%;
+  height:500px;
+  background: url("./img/news-banner-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.g-wrap{
+  @include clearfix;
+  width:1200px;
+  height:auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  .g-wrap__nav{
+    float:left;
+    width:200px;
+    h1{
+      background: url("./img/news-01.png") no-repeat;
+      height:50px;
+      padding-left:65px;
+      padding-top:20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+    .g-nav__prev {
+      li {
+        width: 200px;
+        padding: 22px 0px;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
+        letter-spacing: 3px;
+        &:first-child {
+          background: url("./img/joinus_07.png") no-repeat;
+        }
+        &.current a {
+          color: #6bd9f2;
+        }
+      }
+    }
+    .g-nav__next{
+      @include clearfix;
+      width:100%;
+      padding-top:50px;
+      h2{
+        font-size: 20px;
+        text-align: center;
+        background: #f1f1f1;
+        height:42px;
+        line-height: 42px;
+        border: 1px solid #ccc;
+      }
+      li{
+        width:100%;
+        height:48px;
+        padding-top:24px;
+        font-size: 14px;
+        @include text-overflow;
+        i{
+          display: inline-block;
+          width:20px;
+          height:20px;
+          border:1px solid #555;
+          text-align: center;
+          line-height: 20px;
+          font-style: normal;
+          margin-right: 10px;
+        }
+        &:hover{
+          a{
+            color:#6bd9f2;
+          }
+        }
+      }
+    }
+  }
+  .g-wrap__bd{
+    float:left;
+    width:1000px;
+    padding-top:15px;
+    padding-left:45px;
+    .g-item__title{
+      width:100%;
+      height:36px;
+      line-height: 36px;
+      border-bottom:1px solid #ccc;
+      padding-left:35px;
+      padding-right:20px;
+      h2{
+        float:left;
+        width:50%;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 600;
+      }
+      .g-item__direction{
+        float:right;
+        height:100%;
+        color:#cccccc;
+        padding-left:35px;
+        background: url("./img/joinus_08.png") no-repeat center left;
+        a{
+          font-size: 14px;
+          color:#cccccc;
+          &:hover{
+            color:#6bd9f2;
+          }
+        }
+      }
+    }
+    .g-item__section{
+      @include clearfix;
+      padding-top: 50px;
+      width:950px;
+      .g-item__list{
+        width:100%;
+        li{
+          @include clearfix;
+          width:100%;
+          height:66px;
+          background: #fff;
+          border: 1px solid #c6c6c6;
+          margin-bottom: 30px;
+          &:hover{
+            cursor: pointer;
+            box-shadow: 0px 3px #e0eff2;
+            .g-item__date{
+              background: #6bd9f2;
+              color:#fff;
+            }
+            .g-item__info{
+              .g-item__word{
+                h2,p{
+                  color:#6bd9f2;
+                }
+              }
+              a{
+                color:#fff;
+                background: #6bd9f2;
+              }
+            }
+          }
+          .g-item__date{
+            @include clearfix;
+            float: left;
+            width:92px;
+            height:100%;
+            padding-top: 3px;
+            background: #c6c6c6;
+            color:#555;
+            text-align: center;
+            h1{
+              font-size: 28px;
+            }
+            h5{
+              font-size: 16px;
+            }
+          }
+          .g-item__info{
+            @include clearfix;
+            float: left;
+            width:856px;
+            height:100%;
+            .g-item__word{
+              float: left;
+              width:700px;
+              height:100%;
+              padding:10px 0px 10px 30px;
+              h2{
+                @include text-overflow;
+                font-size: 20px;
+                color: #555;
+              }
+              p{
+                @include text-overflow;
+                font-size: 16px;
+                color:#c6c6c6;
+              }
+            }
+            a{
+              float: left;
+              display: block;
+              width:96px;
+              height:34px;
+              line-height: 34px;
+              margin:16px 30px;
+              text-align: center;
+              background: #c6c6c6;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .g-item__page{
+        width:330px;
+        height:20px;
+        margin:20px auto;
+        li{
+          float: left;
+          padding:2px 5px;
+          border:1px solid #ddd;
+          margin-left: 10px;
+          &.current{
+            background: #6bd9f2;
+            a{
+              color:#fff;
+            }
+          }
+          &:hover{
+            background: #6bd9f2;
+            a{
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.w-bottomBar{
+  margin-top: 0px;
+}
+.color-first{
+  background:#2e77c1 ;
+  color:#fff;
+}
+.color-twice{
+  background:#4eb8e9 ;
+  color:#fff;
+}
+.color-third{
+  background:#6bd9f2 ;
+  color:#fff;
+}
