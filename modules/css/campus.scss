@@ -86,8 +86,37 @@ html,body{
       @include clearfix;
       padding-top: 50px;
       width:100%;
-
-
+      figure.effect-oscar {
+        float:left;
+        width:300px;
+        height:200px;
+        margin-left:0px;
+        margin-right:25px;
+        margin-bottom: 25px;
+        &:nth-child(3),&:nth-child(6),&:nth-child(9){
+          margin-right: 0px;
+        }
+      }
+    }
+    .g-item__page{
+      @include clearfix;
+      width:200px;
+      height:23px;
+      font-size: 12px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+      li{
+        float: left;
+        border:1px solid #6bd9f2;
+        padding:2px 6px;
+        margin-right: 10px;
+        &:hover{
+          background: #6bd9f2;
+          a{
+            color:#fff;
+          }
+        }
+      }
     }
   }
 }
@@ -95,17 +124,6 @@ html,body{
   margin-top: 0px!important;
 }
 
-figure.effect-oscar {
-  float:left;
-  width:300px;
-  height:200px;
-  margin-left:0px;
-  margin-right:25px;
-  margin-bottom: 25px;
-  &:nth-child(3),&:nth-child(6),&:nth-child(9){
-    margin-right: 0px;
-  }
-}
 
 
 
