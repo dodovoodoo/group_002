@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
   <style>
-    .wrap{
-      float: left;
-      width:200px;
-      height:100px;
-      border:1px solid #000000;
+    .box{
+      position: relative;
+      margin: 150px auto 100px;
+      box-sizing: border-box;
+      width:400px;
+      height:300px;
+      background: #fff;
+      border:35px solid #ccc;
+    }
+    .arrows{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      background: #fff;
+      margin-top: -75px;
+      margin-left: 120px;
     }
     .test{
-      float: right;
-      width:80px;
-      height:80px;
-      background: red;
+      position: absolute;
+      left:150px;
+      top:0px;
+      width:200px;
+      height:200px;
+      border:100px solid #fff;
+      border-left-color: #ccc;
+      box-sizing: border-box;
+      z-index: 4;
+    }
+    .test2{
+      position: absolute;
+      left:0px;
+      top:75px;
+      width:150px;
+      height:150px;
+      border-top: 50px solid #ccc;
+      border-radius: 150px 0px 0px 0px/150px 0px 0px 0px;
+      z-index: 4;
+    }
+    #bo1{
+      position: absolute;
+      left: -20px;
+      top: -35px;
+      z-index: 2;
+      box-sizing: border-box;
+      width: 140px;
+      height: 0px;
+      border: 35px solid #ccc;
+      border-right-color: #fff;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+    #bo2{
+      position: absolute;
+      right: -35px;
+      top: 125px;
+      z-index: 2;
+      box-sizing: border-box;
+      width: 0px;
+      height: 140px;
+      border: 35px solid #ccc;
+      border-top-color: #fff;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+    .smile-box{
+      box-sizing: border-box;
+      width:200px;
+      height:200px;
+      border-radius: 100px;
+      border:10px solid yellow;
+      margin: 0 auto;
+      position: relative;
+    }
+    .left-eye,.right-eye{
+      width:20px;
+      height:20px;
+      background: yellow;
+      border-radius: 10px;
+      position: absolute;
+    }
+
+    .left-eye{
+      top:50px;
+      left:50px;
+    }
+    .right-eye{
+      top:50px;
+      right:50px;
+    }
+    .mouth{
+      position: absolute;
+      left:40px;
+      bottom:40px;
+      width:100px;
+      height:100px;
+      border-radius: 50px;
+      border-bottom: 10px solid yellow;
     }
   </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="test"></div>
+<div class="box">
+  <div id="bo1"></div>
+  <div id="bo2"></div>
+  <div class="arrows">
+    <div class="test"></div>
+    <div class="test2"></div>
+  </div>
 </div>
-<div class="wrap">
-  <div class="test"></div>
+
+<div class="smile-box">
+  <div class="left-eye"></div>
+  <div class="right-eye"></div>
+  <div class="mouth"></div>
 </div>
-<script src="lib/mod.js"></script>
-<script>
-  require.async('modules/app/test123.js');
-</script>
 </body>
 </html>
