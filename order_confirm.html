@@ -41,6 +41,7 @@
         <td>商品</td>
         <td>单价</td>
         <td>数量</td>
+        <td>优惠</td>
         <td>小计</td>
         <td>操作</td>
       </tr>
@@ -57,11 +58,12 @@
         <td>
           <input type="button" value="-" class="u-input__count__min"/><input type="number" name="" id="" class="u-input__count" value="1"/><input type="button" value="+" class="u-input__count__max"/>件
         </td>
+        <td class="orange">无</td>
         <td>
           ￥<span class="g-checklist__subtotal">298000</span>
         </td>
         <td>
-          <a href="#" class="g-checklist__del">移除商品</a>
+          <a href="javascript:void(0)" class="g-checklist__del ">移除商品</a>
         </td>
       </tr>
       <tr class="g-checklist__item">
@@ -77,27 +79,74 @@
         <td>
           <input type="button" value="-" class="u-input__count__min"/><input type="number" name="" id="" class="u-input__count" value="1"/><input type="button" value="+" class="u-input__count__max"/>件
         </td>
+        <td class="orange">无</td>
         <td>
           ￥<span class="g-checklist__subtotal">280</span>
         </td>
         <td>
-          <a href="#" class="g-checklist__del">移除商品</a>
+          <a href="javascript:void(0)" class="g-checklist__del ">移除商品</a>
         </td>
       </tr>
       <tr class="g-checklist__ft">
         <td style="text-align: left" colspan="3">
           <input type="checkbox" name="choose" class="u-checkBox" id="sum_checkBox_1"/>&nbsp;全选&nbsp;&nbsp;
-          <a herf="">删除所选商品</a>
+          <a herf="javascript:void(0)" class="g-checklist__del_chose">删除所选商品</a>
         </td>
-        <td colspan="3">
-          已选择&nbsp;<span class="g-checklist__sumCount">0</span>&nbsp;件商品&nbsp;&nbsp;
-          总价：￥<span class="g-checklist__total">0</span>
+        <td colspan="4" style="position: relative;">
+          <div class="g-checklist__super">
+            <p>已选择&nbsp;<span class="g-checklist__sumCount">0</span>&nbsp;件商品&nbsp;&nbsp;已优惠：<span class="orange">无</span></p>
+            <p style="text-align: right">总价：￥<span class="g-checklist__total">0</span></p>
+          </div>
+          <input type="button" value="去支付" data-modal="#myModal" class="g-checklist__pay"/>
         </td>
       </tr>
       </tbody>
     </table>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">编辑收货地址</h4>
+      </div>
+      <form action="" class="address_form" name="" method="post">
+      <div class="modal-body">
+            <table class="modal-body__table">
+              <tr>
+                <td>
+                  <span>*</span>姓名：&nbsp;<input name="username" size="11" id="username"/>
+                </td>
+                <td>
+                  <span>*</span>电话：&nbsp;<input name="phone" id="phone"  maxLength="11"  minLength="11" size="11"/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <span>*</span>地址：
+                  <select id="cmbProvince" name="cmbProvince"></select>
+                  <select id="cmbCity" name="cmbCity"></select>
+                  <select id="cmbArea" name="cmbArea"></select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea name=""></textarea>
+                </td>
+              </tr>
+            </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn makesure">确定</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="components/jquery/jquery.js"></script>
 <link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
 <script src="lib/mod.js"></script>
 <script>

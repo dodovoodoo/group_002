@@ -141,7 +141,7 @@ html,body{
                   height:130px;
                   margin-top:0px;
                   margin-left: 100px;
-                  transition: margin-left ease-in-out 1s,width  ease-in-out  1s,height  ease-in-out  1s;
+                  transition: all  ease-in-out  1s;
                 }
                 span{
                   left:45px;
@@ -168,6 +168,7 @@ html,body{
                 height:117px;
                 margin-top: 6.5px;
                 margin-left: 122px;
+                transition: all  ease-in-out  1s;
               }
               span{
                 position: absolute;

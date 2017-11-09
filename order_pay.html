@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="dodovoodoo">
+  <title>订单确认</title>
+  <link rel="stylesheet" href="modules/css/common.scss">
+  <link rel="stylesheet" href="modules/css/order_pay.scss">
+</head>
+<body>
+<link rel="import" href="modules/widget/topBar/topBar.html?__inline">
+<div class="g-page">
+  <div class="g-headline">
+    <h1>在线支付</h1>
+  </div>
+  <div class="g-wrap">
+    <div class="g-wrap__progress">
+      <div class="g-progress__line"></div>
+      <div class="g-progress__line__2"></div>
+      <div class="g-progress__step current">
+        <i class="g-step__round">1</i>
+        <span>确认订单</span>
+      </div>
+      <div class="g-progress__step current">
+        <i class="g-step__round">2</i>
+        <span>在线支付</span>
+      </div>
+      <div class="g-progress__step">
+        <i class="g-step__round">3</i>
+        <span>支付成功</span>
+      </div>
+    </div>
+    <div class="g-payment__mode">
+      <div class="g-payment__headline">
+        <span>支付方式</span><div class="g-payment__line"></div>
+      </div>
+      <!--网上银行-->
+      <div class="g-payment__bank">
+        <h2><span>银联支付</span></h2>
+        <ul class="g-bank__list">
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_ABC"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_CCB"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_CMB"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank__ICBC"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank__SPDB"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_BOC"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_PSBC"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_BOCom"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_CMBC"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_CEB"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_HXB"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_CNCB"></a>
+          </li>
+        </ul>
+      </div>
+      <!--第三方-->
+      <div class="g-payment__online">
+        <h2><span>支付平台</span></h2>
+        <ul class="g-bank__list">
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_alipay"></a>
+          </li>
+          <li>
+            <i class="g-bank__chose"></i>
+            <a href="javascript:void(0)" class="g-bank__item" id="bank_wechatPay"></a>
+          </li>
+        </ul>
+      </div>
+      <!--金额-->
+      <div class="g-payment__money">
+        <h2><span>结算金额</span></h2>
+        <div class="g-money__bd">
+          <p>商品数量：<span>2件</span></p>
+          <p>商品总价：<span>29280元</span></p>
+        </div>
+      </div>
+      <!--提交按钮-->
+      <input type="button" value="立即支付" class="g-payment__submitBtn"/>
+    </div>
+  </div>
+</div>
+
+<script src="components/jquery/jquery.js"></script>
+<link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
+<script src="lib/mod.js"></script>
+<script>
+  require("modules/app/order_pay");
+</script>
+</body>
+</html>

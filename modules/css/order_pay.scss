@@ -1,0 +1,310 @@
+@import "base/mixins";
+
+html, body {
+  background: #fff;
+}
+
+.g-page {
+  width: 100%;
+}
+
+.g-headline {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background: #f1f1f1;
+  h1 {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 1em;
+  }
+}
+
+.g-wrap {
+  width: 1200px;
+  padding-top: 30px;
+  margin: 0 auto;
+  .g-wrap__progress {
+    @include clearfix;
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 90px;
+    .g-progress__line {
+      position: absolute;
+      top: 23px;
+      left: 25px;
+      z-index: 0;
+      width: 750px;
+      height: 0px;
+      border-top: 2px solid #ccc;
+    }
+    .g-progress__line__2 {
+      position: absolute;
+      top: 23px;
+      left: 25px;
+      z-index: 1;
+      width: 375px;
+      height: 0px;
+      border-top: 2px solid #6bd9f2;
+    }
+    .g-progress__step {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 80px;
+      height: 100%;
+      text-align: center;
+      z-index: 2;
+      &:nth-child(3) {
+        top: 0px;
+        left: 0px;
+      }
+      &:nth-child(4) {
+        top: 0px;
+        left: 360px;
+      }
+      &:nth-child(5) {
+        top: 0px;
+        left: 720px;
+      }
+      &.current {
+        .g-step__round {
+          background: #6bd9f2;
+          color: #fff;
+        }
+        span {
+          color: #6bd9f2;
+        }
+      }
+      .g-step__round {
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 0 auto;
+        background: #cccccc;
+        font-style: normal;
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+        line-height: 46px;
+        border-radius: 46px;
+        z-index: 1;
+      }
+      span {
+        display: block;
+        padding-top: 20px;
+      }
+    }
+  }
+  .g-payment__mode {
+    width: 100%;
+    height: 940px;
+    .g-payment__headline {
+      @include clearfix;
+      margin-top: 30px;
+      font-size: 20px;
+      span {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+      }
+      .g-payment__line {
+        display: inline-block;
+        width: 1100px;
+        height: 0px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 6px;
+      }
+    }
+    .g-payment__bank, .g-payment__online, .g-payment__money {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 30px;
+      h2 {
+        position: relative;
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px !important;
+        span {
+          padding-left: 30px;
+          display: inline-block;
+        }
+        &::before {
+          content: " ";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: #6bd9f2;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    /**银联**/
+    .g-payment__bank {
+      .g-bank__list {
+        @include clearfix;
+        width: 100%;
+        padding-left: 60px;
+        li {
+          @include clearfix;
+          float: left;
+          width: 300px;
+          height: 70px;
+          line-height: 70px;
+          margin-top: 20px;
+          margin-right: 50px;
+          i {
+            float: left;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-top: 25px;
+            margin-right: 10px;
+            background: url('./img/bank-uncheck.png') no-repeat center center;
+            transition: all .8s;
+            &.checked {
+              background: url('./img/bank-check.png') no-repeat center center;
+              transition: all .8s;
+            }
+          }
+          .g-bank__item {
+            float: left;
+            display: block;
+            width: 266px;
+            height: 60px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url("./img/bank(12).png");
+            background-color: #f9f9f9;
+            &#bank_ABC {
+              background-image: url("./img/bank(15).png");
+            }
+            &#bank_CCB {
+              background-image: url("./img/bank(13).png");
+            }
+            &#bank_CMB {
+              background-image: url("./img/bank(16).png");
+            }
+            &#bank__ICBC {
+              background-image: url("./img/bank(14).png");
+            }
+            &#bank__SPDB {
+              background-image: url("./img/bank(22).png");
+            }
+            &#bank__BOC {
+              background-image: url("./img/bank(17).png");
+            }
+            &#bank_PSBC {
+              background-image: url("./img/bank(12).png");
+            }
+            &#bank_BOCom {
+              background-image: url("./img/bank(18).png");
+            }
+            &#bank_CMBC {
+              background-image: url("./img/bank(19).png");
+            }
+            &#bank_CEB {
+              background-image: url("./img/bank(20).png");
+            }
+            &#bank_HXB {
+              background-image: url("./img/bank(23).png");
+            }
+            &#bank_CNCB {
+              background-image: url("./img/bank(21).png");
+            }
+          }
+        }
+      }
+    }
+    /**第三方平台**/
+    .g-payment__online {
+      .g-bank__list {
+        @include clearfix;
+        width: 100%;
+        padding-left: 60px;
+        li {
+          @include clearfix;
+          float: left;
+          width: 350px;
+          height: 103px;
+          line-height: 103px;
+          margin-top: 20px;
+          margin-right: 50px;
+          i {
+            float: left;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-top: 45px;
+            margin-right: 10px;
+            background: url('./img/bank-uncheck.png') no-repeat center center;
+            transition: all .8s;
+            &.checked {
+              background: url('./img/bank-check.png') no-repeat center center;
+              transition: all .8s;
+            }
+          }
+          .g-bank__item {
+            float: left;
+            display: block;
+            width: 303px;
+            height: 103px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #f9f9f9;
+            &#bank_alipay {
+              background-image: url("./img/zhifubao.png");
+            }
+            &#bank_wechatPay {
+              background-image: url("./img/weixinpay.png");
+            }
+          }
+        }
+      }
+    }
+    /**结算信息**/
+    .g-payment__money{
+      @include  clearfix;
+      .g-money__bd{
+        margin-top: 20px;
+        float:right;
+        width:310px;
+        height:90px;
+        p{
+          color:#888888;
+          font-size: 18px;
+          span{
+            color:#ff6f18;
+          }
+        }
+      }
+    }
+    .g-payment__submitBtn{
+      float:right;
+      width:180px;
+      height:40px;
+      line-height: 40px;
+      text-align: center;
+      color:#fff;
+      font-size: 16px;
+      background: #6ddaf2;
+      border:1px solid #6ddaf2;
+      border-radius:3px;
+      letter-spacing: 3px;
+      margin-right: 114px;
+    }
+  }
+
+}
+
