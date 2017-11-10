@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="dodovoodoo">
+  <title>订单确认</title>
+  <link rel="stylesheet" href="modules/css/common.scss">
+  <link rel="stylesheet" href="modules/css/pay_result.scss">
+</head>
+<body>
+<link rel="import" href="modules/widget/topBar/topBar.html?__inline">
+<div class="g-page">
+  <div class="g-headline">
+    <h1>支付成功</h1>
+  </div>
+  <div class="g-wrap">
+    <div class="g-wrap__progress">
+      <div class="g-progress__line"></div>
+      <div class="g-progress__line__2"></div>
+      <div class="g-progress__step current">
+        <i class="g-step__round">1</i>
+        <span>确认订单</span>
+      </div>
+      <div class="g-progress__step current">
+        <i class="g-step__round">2</i>
+        <span>在线支付</span>
+      </div>
+      <div class="g-progress__step current">
+        <i class="g-step__round">3</i>
+        <span>支付成功</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<style>
+  .box{
+    -webkit-perspective: 800;
+    -webkit-perspective-origin: 50% 50%;
+    -webkit-transform-style: -webkit-preserve-3d;
+  }
+  .3D{
+      width:400px;
+      height:400px;
+      background-color: #69c;
+      margin: 0 auto;
+      -webkit-transform: rotateX(45deg);
+    }
+</style>
+<div class="box">
+  <div class="3D"></div>
+</div>
+<script src="components/jquery/jquery.js"></script>
+<link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
+<script src="lib/mod.js"></script>
+<script>
+  //require("modules/app/test123");
+</script>
+</body>
+</html>
