@@ -115,11 +115,32 @@
         </div>
       </div>
       <!--提交按钮-->
-      <input type="button" value="立即支付" class="g-payment__submitBtn" onclick="location.href='pay_result.html'"/>
+      <input type="button" value="立即支付" class="g-payment__submitBtn" />
     </div>
   </div>
 </div>
-
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">支付通知</h4>
+      </div>
+      <form action="" class="address_form" name="" method="post">
+        <div class="modal-body">
+          <h2>支付失败！</h2>
+          <p>支付遇到问题，请尝试重新支付。</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal" id="dismiss">返回购物</button>
+          <button type="submit" class="btn makesure" data-dismiss="modal">重新支付</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--modal-->
 <script src="components/jquery/jquery.js"></script>
 <link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
 <script src="lib/mod.js"></script>
